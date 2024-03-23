@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,23 +8,24 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container mt-5">
+        <form action="https://api.sheetmonkey.io/form/5ifxXJAhos4TKYeRE5kKiu" method="post">
         <h1 class="mb-4">Adicionar Gasto</h1>
         <div class="form-group">
             <label for="valor">Valor:</label>
             <input type="text" class="form-control" id="valor" name="valor">
         </div>
-        <div class="form-group">
+        <div class="form-group" action="">
             <label for="descricao">Descrição:</label>
             <input type="text" class="form-control" id="descricao" name="descricao">
         </div>
-        <button class="btn btn-primary" onclick="adicionarGasto()">Adicionar Gasto</button>
+        <button type="submit" class="btn btn-primary">Adicionar Gasto</button>
+        </form>
     </div>
-
-    <!-- Script para carregar a API do Google Sheets -->
-    <script src="https://apis.google.com/js/api.js"></script>
     <!-- Script JavaScript personalizado -->
     <script src="javascript.js"></script>
 </body>
+
 </html>
